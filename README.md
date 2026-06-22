@@ -119,7 +119,7 @@ python3 scripts/check-okf.py okf/mjml
 
 ## License
 
-Released under the [MIT License](LICENSE) so anyone can use, adapt, and redistribute it. If you'd rather require attribution on the knowledge itself, CC-BY-4.0 is a reasonable alternative for the Markdown content — swap the `LICENSE` file accordingly.
+Released under the [MIT License](LICENSE) so anyone can use, adapt, and redistribute it.
 
 ---
 
