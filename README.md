@@ -11,13 +11,13 @@ Same MJML knowledge, two formats. Pick whichever fits your tool — or use both.
 
 ## Which one do I want?
 
-| If you're… | Use | Where |
-|---|---|---|
-| Working in Claude (Claude Code, the Claude apps, claude.ai) | the **skill** | [`skill/mjml/`](skill/mjml) |
-| Pointing an agent, RAG pipeline, or knowledge catalog at a wiki | the **OKF bundle** | [`okf/mjml/`](okf/mjml) |
-| Just after a clean MJML reference | either — both are plain Markdown | — |
+| If you're…                                                      | Use                              | Where                       |
+| --------------------------------------------------------------- | -------------------------------- | --------------------------- |
+| Working in Claude (Claude Code, the Claude apps, claude.ai)     | the **skill**                    | [`skill/mjml/`](skill/mjml) |
+| Pointing an agent, RAG pipeline, or knowledge catalog at a wiki | the **OKF bundle**               | [`okf/mjml/`](okf/mjml)     |
+| Just after a clean MJML reference                               | either — both are plain Markdown | —                           |
 
-The skill is the *instructional* layer: how to behave when writing MJML. The bundle is the *knowledge* layer: a navigable graph of MJML concepts. They cover the same ground from two angles, so reaching for both is reasonable.
+The skill is the _instructional_ layer: how to behave when writing MJML. The bundle is the _knowledge_ layer: a navigable graph of MJML concepts. They cover the same ground from two angles, so reaching for both is reasonable.
 
 ---
 
@@ -30,7 +30,7 @@ The skill is the *instructional* layer: how to behave when writing MJML. The bun
 **Install:** the skill is just the folder that contains `SKILL.md`. Add it to Claude the way your surface accepts skills (the Skills section in settings, or your Claude Code skills directory) — see the [Skills documentation](https://docs.claude.com) for the current procedure. To work from a local clone:
 
 ```bash
-git clone https://github.com/<your-username>/mjml-ai-knowledge.git
+git clone https://github.com/JayOram/mjml-ai-knowledge.git
 # point Claude at:  mjml-ai-knowledge/skill/mjml
 ```
 
@@ -45,7 +45,7 @@ Once available, Claude consults it automatically when you write `.mjml`, use `mj
 **Use it:** point any OKF consumer or agent at the bundle root, `okf/mjml/`.
 
 ```bash
-git clone https://github.com/<your-username>/mjml-ai-knowledge.git
+git clone https://github.com/JayOram/mjml-ai-knowledge.git
 # mount / point your agent or consumer at:  mjml-ai-knowledge/okf/mjml
 ```
 
@@ -71,7 +71,7 @@ okf/mjml/
 └── tooling/            # cli.md, node-api.md, validation.md
 ```
 
-> **Note on links:** cross-links inside the bundle are *bundle-root-relative* (e.g. `/components/mj-section.md`), the form OKF consumers resolve when the bundle root is mounted. They are deliberately not GitHub web links, so don't expect them to navigate from GitHub's file viewer.
+> **Note on links:** cross-links inside the bundle are _bundle-root-relative_ (e.g. `/components/mj-section.md`), the form OKF consumers resolve when the bundle root is mounted. They are deliberately not GitHub web links, so don't expect them to navigate from GitHub's file viewer.
 
 ---
 
